@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thyroid Disease Detection</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="shortcut icon" href="../AllCss/thyroidlogo11.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../AllCss/thyroidlogo11.png">
+    <!-- Google Web Fonts -->
+    <link href="../AllCss/css1/google-fonts.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../AllCss/css1/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../AllCss/css1/style.css" rel="stylesheet">
+</head>
+<style>
+    .header {
+  
+  position:fixed;
+  height: 90px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align : center;
+  top: 0;
+left: 0;
+
+padding: 20px 40px !important;
+
+right: 0;
+
+top: 0;
+
+z-index: 111;
+
+    }
+  #zoz{
+    margin-right: 880px;
+    margin-top: 5px;
+    width: 220px;
+  }
+</style>
+<body>
+    <div class="container-xxl bg-white p-0">
+
+        
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+        <div class="header">
+            <a class="navbar-brand" href="../html/page.html"><img src="../AllCss/LogoTHHH1.png" id="zoz" alt="image"></a>
+          
+          </div>
+
+
+        <!-- Newsletter Start -->
+        <div class="container-xxl bg-primary newsletter my-5 fadeInUp">
+            <div class="container px-lg-5">
+                    <div class="col-12 col-md-6">
+                    </div>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        <!-- Newsletter End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mb-5 pb-2 fadeInUp">
+                    <!-- <h2 class="mt-2">Diseases Of Thyroid Gland</h2> -->
+                </div>
+
+                <form onsubmit="toggleResult(); return false;" >
+                <!-- first disease -->
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 zoomIn" >
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('firstDisease')" id="1" name="firstDisease">
+                                <label class="form-check-label" for="1">
+                                    Difficulty swallowing
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('firstDisease')" id="2" name="firstDisease">
+                                <label class="form-check-label" for="2">
+                                    Difficulty breathing with exertion
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('firstDisease')" id="3" name="firstDisease">
+                                <label class="form-check-label" for="3">
+                                    Cough/Hoarseness
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('firstDisease')" id="4" name="firstDisease">
+                                <label class="form-check-label" for="4">
+                                    Snoring
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of first disease -->
+
+                    <div class="col-lg-4 col-md-6 zoomIn">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('secondDisease')" id="5" name="secondDisease">
+                                <label class="form-check-label" for="5">
+                                    Anxiety and irritability
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('secondDisease')" id="6" name="secondDisease">
+                                <label class="form-check-label" for="6">
+                                    Fine tremor of hands or fingers
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('secondDisease')" id="7" name="secondDisease">
+                                <label class="form-check-label" for="7">
+                                    Heat sensitivity
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('secondDisease')" id="8" name="secondDisease">
+                                <label class="form-check-label" for="8">
+                                    Change in the menstrual cycle
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 zoomIn">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                             <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('thirdDisease')" id="9" name="thirdDisease">
+                                <label class="form-check-label" for="9">
+                                    Muscles and joints pain
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('thirdDisease')" id="10" name="thirdDisease">
+                                <label class="form-check-label" for="10">
+                                    Abnormal weight gain
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('thirdDisease')" id="11" name="thirdDisease">
+                                <label class="form-check-label" for="11">
+                                    Pale skin and dry hair
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('thirdDisease')" id="12" name="thirdDisease">
+                                <label class="form-check-label" for="12">
+                                    Constipation
+
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 zoomIn">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                             <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('forthDisease')" id="13" name="forthDisease">
+                                <label class="form-check-label" for="13">
+                                    Suddenly weight loss
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('forthDisease')" id="14" name="forthDisease">
+                                <label class="form-check-label" for="14">
+                                    A pounding heart
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('forthDisease')" id="15" name="forthDisease">
+                                <label class="form-check-label" for="15">
+                                    Trouble sleeping/nervousness
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('forthDisease')" id="16" name="forthDisease">
+                                <label class="form-check-label" for="16">
+                                    Muscle weakness
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 zoomIn">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                         <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('fifthDisease')" id="17" name="fifthDisease">
+                                <label class="form-check-label" for="17">
+                                    An obvious nodule in the neck that grows quickly
+                                </label>
+                            </div>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('fifthDisease')" id="18" name="fifthDisease">
+                                <label class="form-check-label" for="18">
+                                    Voice changes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('fifthDisease')" id="19" name="fifthDisease">
+                                <label class="form-check-label" for="19">
+                                    Constant cough/hoarseness
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('fifthDisease')" id="20" name="fifthDisease">
+                                <label class="form-check-label" for="20">
+                                    Swollen neck lymph nodes with constant pain going up to ears
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 zoomIn">
+                        <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-home fa-2x"></i>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('sixthDisease')" id="21" name="sixthDisease">
+                                <label class="form-check-label" for="21">
+                                    Pain in throat
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('sixthDisease')" id="22" name="sixthDisease">
+                                <label class="form-check-label" for="22">
+                                    Swelling of the gland
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('sixthDisease')" id="23" name="sixthDisease">
+                                <label class="form-check-label" for="23">
+                                    Feeling generally unwell
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" onclick="updateCheckedValues('sixthDisease')" id="24" name="sixthDisease">
+                                <label class="form-check-label" for="24">
+                                    Fatigue
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+
+
+
+
+    <!-- result div -->
+    <div class="container-xxl" id="resultDiv" >
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <h5 class="mb-3" id="result"></h5>
+            </div>
+    </div>
+
+
+    <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer mt-5 pt-5 fadeIn">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="../AllCss/js1/jquery-3.4.1.js"></script>
+    <script src="../AllCss/js1/bootstrap@5.0.0.bundle.min.js"></script>
+    <script src="../AllCss/js1/collect.js_4.34.3.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../AllCss/js1/main.js"></script>
+</body>
+
+</html>

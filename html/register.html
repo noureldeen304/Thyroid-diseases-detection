@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Thyroid Disease Detection</title>
+      <link rel="shortcut icon" href="../AllCss/thyroidlogo11.png" type="image/x-icon" />
+      <link rel="apple-touch-icon" href="../AllCss/thyroidlogo11.png">
+      <link rel="stylesheet" href="../AllCss/YYY.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="header">
+         <a class="navbar-brand" href="../html/index.html"><img src="../AllCss/LogoTHHH1.png" id="zoz" alt="image"></a>
+       
+       </div>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title signup">
+               Signup Form
+            </div>
+         </div>
+     
+            <div class="form-inner">
+            
+               <form action="{{ url_for('register') }}" class="signup" method="post">
+                  <div class="msg">{{ msg }}</div>
+                  <div class="field">
+                  <input id="email" name="email" type="text" placeholder="Enter Your email" />
+                  </div>
+                  <div class="field">
+                     <input id="password" name="password" type="password" placeholder="Enter Your Password" />
+                  </div>
+                  <div class="field">
+                     <input id="repassword" type="password" placeholder="Confirm password" >
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" class="btn" value="Sign Up">
+                  </div>
+                  <div class="signup-link">
+                     Already have an account? <a href="../html/login.html">Signin now</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <p>
+         <br>
+         <br>
+      </p>
+      <div class="copyrights">
+         <p class="text">© 2023 Thyroid Detection. All Rights Reserved.</p>
+           <div id="foot">
+             <div class="social">
+               <ul class="social-links">
+                   <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                   <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                   <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                   <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                   <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                   <li id="icon"><a href=""><i class="fa fa-rss"></i></a></li>
+               </ul>
+             </div>
+         </div>
+       </div>
+ 
+   </body>
+</html>
+ 
